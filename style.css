@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  --color-background: hsl(179, 62%, 43%);
+  --primary: hsl(204, 43%, 93%);
+  --primary-variant: hsl(218, 22%, 67%);
+  --color-secondary: hsl(71, 73%, 54%);
+  --color-white: #fff;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+ul {
+  list-style: none;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Karla", sans-serif;
+  min-height: 100vh;
+  background: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  box-shadow: 0 0 3rem var(--primary-variant);
+  border-radius: 1rem;
+}
+.card .top {
+  background: var(--color-white);
+  padding: 4rem 7rem 4rem 4rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.card .top h2 {
+  color: var(--color-background);
+  margin-bottom: 1.4rem;
+}
+.card .top h3 {
+  margin-bottom: 1rem;
+  color: var(--color-secondary);
+}
+
+.card .top p {
+  color: var(--primary-variant);
+  line-height: 1.5;
+  font-weight: 700;
+}
+.bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.bottom .left {
+  border-bottom-left-radius: 1rem;
+  background: var(--color-background);
+  padding: 4rem;
+}
+.bottom .left h3,
+.bottom .right h3 {
+  color: var(--primary);
+  margin-bottom: 2rem;
+}
+.price {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 1rem 0;
+}
+.price p {
+  font-size: 3.6rem;
+  color: var(--primary);
+  margin-right: 1rem;
+}
+.price small {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--primary-variant);
+}
+.bottom .left > p {
+  color: var(--primary);
+  margin-bottom: 3rem;
+}
+.bottom .left button {
+  width: 100%;
+  background-color: var(--color-secondary);
+  padding: 1.5rem 0;
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+}
+.bottom .right {
+  border-bottom-right-radius: 1rem;
+  padding: 4rem;
+  background-color: var(--color-background);
+  filter: brightness(108%);
+}
+.bottom .right ul li {
+  padding: 0.2rem 0;
+  color: var(--primary);
+  font-size: 1.4rem;
+}
